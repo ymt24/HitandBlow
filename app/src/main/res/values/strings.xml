@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Hit and Blow</string>
+
+    <string name="message_start">Press START for new game</string>
+    <string name="message_enter">Enter your guess</string>
+
+    <string name="guess_init_letter">*</string>
+    <string name="guess_digit">%d</string>
+
+    <string name="status_item">%1$03d Guess: %2$d, Hit: %3$d, Blow: %4$d</string>
+
+    <string name="num_key_1_label">1</string>
+    <string name="num_key_2_label">2</string>
+    <string name="num_key_3_label">3</string>
+    <string name="num_key_4_label">4</string>
+    <string name="num_key_5_label">5</string>
+    <string name="num_key_6_label">6</string>
+    <string name="num_key_7_label">7</string>
+    <string name="num_key_8_label">8</string>
+    <string name="num_key_9_label">9</string>
+
+    <string name="ctrl_start">START</string>
+    <string name="ctrl_give_up">GIVE UP</string>
+
+    <string name="digit_already_used">%d is already used</string>
+    <string name="give_up_message">Do you really give up this game?</string>
+    <string name="you_win_title">You Win!</string>
+    <string name="you_win_message">Congratulations!</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+</resources>
