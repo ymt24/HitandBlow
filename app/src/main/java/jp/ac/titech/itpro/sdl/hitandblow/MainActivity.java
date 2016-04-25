@@ -132,7 +132,8 @@ public class MainActivity extends AppCompatActivity {
                     })
                     .setNegativeButton(R.string.no, null)
                     .show();
-        } else
+        }
+        else
             startGame();
     }
 
