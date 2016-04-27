@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="activity_horizontal_margin">32dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
-    <dimen name="guess_view_horizontal_margin">28dp</dimen>
     <dimen name="ui_vertical_margin">8dp</dimen>
+    <dimen name="status_horizontal_margin">16dp</dimen>
 
     <dimen name="message_text_size">16sp</dimen>
-    <dimen name="guess_view_text_size">32sp</dimen>
+    <dimen name="digit_text_size">32sp</dimen>
     <dimen name="status_text_size">16sp</dimen>
     <dimen name="button_text_size">24sp</dimen>
+
+    <dimen name="key_width">88dp</dimen>
+    <dimen name="key_height">48dp</dimen>
+    <dimen name="digit_width">64dp</dimen>
+    <dimen name="digit_height">64dp</dimen>
 </resources>

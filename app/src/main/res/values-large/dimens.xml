@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="activity_horizontal_margin">128dp</dimen>
+    <dimen name="activity_horizontal_margin">64dp</dimen>
     <dimen name="activity_vertical_margin">32dp</dimen>
 
-    <dimen name="guess_view_horizontal_margin">64dp</dimen>
     <dimen name="ui_vertical_margin">12dp</dimen>
+    <dimen name="status_horizontal_margin">64dp</dimen>
 
     <dimen name="message_text_size">24sp</dimen>
-    <dimen name="guess_view_text_size">48sp</dimen>
+    <dimen name="digit_text_size">48sp</dimen>
     <dimen name="status_text_size">24sp</dimen>
     <dimen name="button_text_size">32sp</dimen>
+
+    <dimen name="key_width">128dp</dimen>
+    <dimen name="key_height">56dp</dimen>
+    <dimen name="digit_width">80dp</dimen>
+    <dimen name="digit_height">80dp</dimen>
 </resources>
