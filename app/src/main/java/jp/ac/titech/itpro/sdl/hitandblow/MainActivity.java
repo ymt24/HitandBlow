@@ -68,8 +68,42 @@ public class MainActivity extends AppCompatActivity {
         rnd = new Random();
         problem = new int[N];
         guess = new int[N];
-        initGame();
+
+        if (savedInstanceState == null) {
+            initGame();
+        } else {
+            messageView.setText(savedInstanceState.getString("MainActivity.messageView"));
+            for (int i = 0; i < GUESS_DIGITS.length; i++) {
+                guessDigits[i].setText(savedInstanceState.getString("MainActivity.guessDigits_" + i));
+            }
+            status = savedInstanceState.getStringArrayList("MainActivity.status");
+            statusAdapter = new ArrayAdapter<>(this, R.layout.status_item, status);
+            statusView.setAdapter(statusAdapter);
+            ctrlButton.setText(savedInstanceState.getString("MainActivity.ctrlButton"));
+            pos = savedInstanceState.getInt("MainActivity.pos");
+            ntrial = savedInstanceState.getInt("MainActivity.ntrial");
+            problem = savedInstanceState.getIntArray("MainActivity.problem");
+            guess = savedInstanceState.getIntArray("MainActivity.guess");
+            game_started = savedInstanceState.getBoolean("MainActivity.game_started");
+        }
     }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState){
+        super.onSaveInstanceState(outState);
+        outState.putString("MainActivity.messageView", messageView.getText().toString());
+        for(int i = 0; i < GUESS_DIGITS.length; i++){
+            outState.putString("MainActivity.guessDigits_" + i, guessDigits[i].getText().toString());
+        }
+        outState.putString("MainActivity.ctrlButton", ctrlButton.getText().toString());
+        outState.putStringArrayList("MainActivity.status", status);
+        outState.putInt("MainActivity.pos", pos);
+        outState.putInt("MainActivity.ntrial", ntrial);
+        outState.putIntArray("MainActivity.problem", problem);
+        outState.putIntArray("MainActivity.guess", guess);
+        outState.putBoolean("MainActivity.game_started", game_started);
+    }
+
 
     public void onClickNumKey(View v) {
         Log.d(TAG, "onClickNumKey");
